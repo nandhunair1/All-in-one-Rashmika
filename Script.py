@@ -143,7 +143,7 @@ Tʜᴀɴᴋ ʏᴏᴜ 🥰</b>
     OWNER_INFO = """
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ : 🍒ɛӼ_ռöֆ__⁷⁷⁷ ✘ ⁴✨🦋
+• ꜰᴜʟʟ ɴᴀᴍᴇ : 🍒ɛӼ_ռöֆ__⁷⁷⁷ ✘ ⁴✨
 • ᴜꜱᴇʀɴᴀᴍᴇ : @AFxSU
 • ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/AFxSU'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
@@ -201,10 +201,11 @@ Tʜᴀɴᴋ ʏᴏᴜ 🥰</b>
 <b>Query: {query}
 IMDb Data:
 
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+📺 Tɪᴛʟᴇ: <a href={url}>{title}</a>
+🎭 Gᴇɴʀᴇs: {genres}
+💀 Rᴇʟᴇᴀsᴇ: <code>{release_date}<code> <code>{countries}<code> 
+🌟 Rᴀᴛɪɴɢ: <code>{rating}<code>
+📖 Sᴛᴏʀʏ: <code>{plot}</code> / 10</b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
