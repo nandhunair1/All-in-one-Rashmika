@@ -49,11 +49,9 @@ async def start(client, message):
                     InlineKeyboardButton('♻️𝐀𝐛𝐨𝐮𝐭♻️', callback_data='about')
                    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_sticker(
+            sticker=random.choice(PICS),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
@@ -95,11 +93,9 @@ async def start(client, message):
                     InlineKeyboardButton('♻️𝐀𝐛𝐨𝐮𝐭♻️', callback_data='about')
                    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_sticker(
+            sticker=random.choice(PICS),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
         )
         return
     data = message.command[1]
