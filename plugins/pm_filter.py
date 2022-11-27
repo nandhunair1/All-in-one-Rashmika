@@ -777,15 +777,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                    ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediasticker(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_sticker(
+            sticker=random.choice(PICS),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
         )
         await query.answer(MSG_ALRT)
 
